@@ -1714,7 +1714,7 @@ static int mdss_fb_register(struct msm_fb_data_type *mfd)
 	var->left_margin = panel_info->lcdc.h_back_porch;
 	var->right_margin = panel_info->lcdc.h_front_porch;
 	var->hsync_len = panel_info->lcdc.h_pulse_width;
-	var->pixclock = panel_info->clk_rate / 1000;
+	var->pixclock = 1000000 / 60;
 
 	if (panel_info->camera_blk || panel_info->camera_dua_blk) {
 		htc_register_camera_bkl(panel_info->camera_blk, panel_info->camera_dua_blk);
