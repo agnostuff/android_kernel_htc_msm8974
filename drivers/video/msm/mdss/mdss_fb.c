@@ -1657,7 +1657,7 @@ static int mdss_fb_register(struct msm_fb_data_type *mfd)
 		var->blue.msb_right = 0;
 		var->green.msb_right = 0;
 		var->red.msb_right = 0;
-		var->transp.offset = 0;
+		var->transp.offset = 24;
 		var->transp.length = 8;
 		bpp = 4;
 		break;
